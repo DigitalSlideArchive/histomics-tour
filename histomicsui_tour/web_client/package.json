@@ -10,10 +10,18 @@
     },
     "girderPlugin": {
         "name": "histomicsui_tour",
-        "main": "./main.js"
+        "main": "./main.js",
+        "dependencies": [
+            "histomicsui",
+            "large_image"
+        ]
     },
     "scripts": {
-        "lint": "eslint . && pug-lint . && stylint"
+        "lint": "eslint . && pug-lint . && stylint",
+        "format": "eslint --cache --fix ."
+    },
+    "dependencies": {
+        "shepherd.js": "^11.1.1"
     },
     "devDependencies": {
         "@girder/eslint-config": "*",
