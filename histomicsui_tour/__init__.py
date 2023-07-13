@@ -7,4 +7,4 @@ class GirderPlugin(plugin.GirderPlugin):
 
     def load(self, info):
         # add plugin loading logic here
-        pass
+        plugin.getPlugin('histomicsui').load(info)
